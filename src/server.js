@@ -12,7 +12,7 @@ const init = async () => {
   const albumService = new AlbumService();
   const songsService = new SongsService();
 
-  const server = new Hapi.Server({
+  const server = Hapi.Server({
     port: process.env.PORT,
     host: process.env.HOST,
     routes: {
